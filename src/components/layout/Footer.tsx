@@ -18,7 +18,7 @@ export function Footer() {
               </div>
             </div>
             <p className="text-primary-foreground/80 leading-relaxed">
-              Delivering premium precast concrete solutions with precision engineering and unmatched durability for over two decades.
+              Delivering premium precast concrete solutions with precision engineering and unmatched durability.
             </p>
             <div className="flex gap-4">
               <a href="#" className="w-10 h-10 bg-primary-foreground/10 rounded-md flex items-center justify-center hover:bg-accent transition-colors">
@@ -61,10 +61,10 @@ export function Footer() {
             <h4 className="font-display text-xl mb-6">Our Products</h4>
             <ul className="space-y-3">
               {[
-                "Precast Walls",
-                "Foundation Blocks",
-                "Drainage Systems",
-                "Retaining Walls",
+                "Precast Beams",
+                "Concrete Slabs",
+                "Fence Posts",
+                "Culverts",
                 "Custom Solutions",
               ].map((product) => (
                 <li key={product}>
@@ -86,13 +86,13 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                 <span className="text-primary-foreground/80">
-                  Industrial Area, Nairobi<br />Kenya
+                  Nairobi, Kenya
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-accent flex-shrink-0" />
-                <a href="tel:+254700000000" className="text-primary-foreground/80 hover:text-accent transition-colors">
-                  +254 700 000 000
+                <a href="tel:+254799994758" className="text-primary-foreground/80 hover:text-accent transition-colors">
+                  +254 799 994 758
                 </a>
               </li>
               <li className="flex items-center gap-3">

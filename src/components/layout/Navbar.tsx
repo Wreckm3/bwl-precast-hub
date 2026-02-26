@@ -54,9 +54,9 @@ export function Navbar() {
 
           {/* CTA Button */}
           <div className="hidden lg:flex items-center gap-4">
-            <a href="tel:+254700000000" className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
+            <a href="tel:+254799994758" className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
               <Phone className="w-4 h-4" />
-              <span className="text-sm font-medium">+254 700 000 000</span>
+              <span className="text-sm font-medium">+254 799 994 758</span>
             </a>
             <Button variant="accent" asChild>
               <Link to="/contact">Get Quote</Link>

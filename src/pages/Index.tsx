@@ -3,7 +3,7 @@ import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { useProducts } from "@/hooks/useProducts";
 import { formatKES } from "@/lib/currency";
-import { Shield, Clock, Award, Truck, ArrowRight, CheckCircle } from "lucide-react";
+import { Shield, Clock, Award, Truck, ArrowRight, CheckCircle, Phone } from "lucide-react";
 import heroImage from "@/assets/hero-construction.jpg";
 import concreteTexture from "@/assets/concrete-texture.jpg";
 
@@ -40,6 +40,9 @@ export default function Index() {
               <Button variant="heroOutline" size="lg" asChild>
                 <Link to="/contact">Request Quote</Link>
               </Button>
+              <Button variant="accent" size="lg" asChild>
+                <a href="tel:+254799994758"><Phone className="w-5 h-5 mr-2" /> Call Now</a>
+              </Button>
             </div>
           </div>
         </div>
@@ -51,8 +54,8 @@ export default function Index() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
               { icon: Shield, label: "Quality Guaranteed", value: "ISO Certified" },
-              { icon: Clock, label: "Years Experience", value: "20+" },
-              { icon: Award, label: "Projects Completed", value: "500+" },
+              { icon: Clock, label: "Years Experience", value: "5+" },
+              { icon: Award, label: "Projects Completed", value: "50+" },
               { icon: Truck, label: "Delivery Service", value: "Nationwide" },
             ].map((item, i) => (
               <div key={i} className="text-center">
@@ -119,7 +122,7 @@ export default function Index() {
               <p className="text-accent font-semibold uppercase tracking-widest mb-2">Why Choose Us</p>
               <h2 className="heading-lg text-foreground mb-6">Built to Last, Delivered with Precision</h2>
               <p className="text-muted-foreground mb-8 text-lg">
-                At BWL Precast Construction, we combine decades of expertise with modern manufacturing to deliver precast concrete solutions that stand the test of time.
+                At BWL Precast Construction, we combine years of expertise with modern manufacturing to deliver precast concrete solutions that stand the test of time.
               </p>
               <ul className="space-y-4">
                 {[
@@ -138,7 +141,7 @@ export default function Index() {
             <div className="relative">
               <img src={concreteTexture} alt="Concrete texture" className="rounded-lg shadow-xl" />
               <div className="absolute -bottom-6 -left-6 bg-accent text-accent-foreground p-6 rounded-lg shadow-xl">
-                <p className="font-display text-4xl">20+</p>
+                <p className="font-display text-4xl">5+</p>
                 <p className="text-sm uppercase tracking-wide">Years of Excellence</p>
               </div>
             </div>

@@ -99,8 +99,8 @@ export default function Contact() {
                 <h2 className="heading-sm text-foreground mb-6">Contact Information</h2>
                 <div className="space-y-6">
                   {[
-                    { icon: MapPin, label: "Address", value: "Industrial Area, Nairobi, Kenya" },
-                    { icon: Phone, label: "Phone", value: "+254 700 000 000" },
+                    { icon: MapPin, label: "Address", value: "Nairobi, Kenya" },
+                    { icon: Phone, label: "Phone", value: "+254 799 994 758" },
                     { icon: Mail, label: "Email", value: "info@bwlprecast.co.ke" },
                     { icon: Clock, label: "Hours", value: "Mon - Fri: 8:00 AM - 5:00 PM" },
                   ].map((item, i) => (
