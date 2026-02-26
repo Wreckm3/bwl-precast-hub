@@ -31,7 +31,7 @@ export function useSubmitContact() {
   const { toast } = useToast();
 
   return useMutation({
-    mutationFn: async (contact: Pick<ContactSubmission, "name" | "email" | "phone" | "message">) => {
+    mutationFn: async (contact: { name: string; email: string; phone?: string | null; message: string }) => {
       const { data, error } = await supabase
         .from("contact_submissions")
         .insert(contact)
