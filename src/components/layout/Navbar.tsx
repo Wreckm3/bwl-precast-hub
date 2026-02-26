@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import bwlLogo from "@/assets/bwl-logo.png";
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -23,13 +24,7 @@ export function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-12 h-12 bg-primary rounded-md flex items-center justify-center group-hover:bg-accent transition-colors duration-300">
-              <span className="text-primary-foreground font-display text-2xl font-bold">B</span>
-            </div>
-            <div className="hidden sm:block">
-              <h1 className="font-display text-xl text-foreground leading-tight">BWL Precast</h1>
-              <p className="text-xs text-muted-foreground uppercase tracking-widest">Construction</p>
-            </div>
+            <img src={bwlLogo} alt="BWL Precast Construction" className="h-14 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
