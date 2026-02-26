@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Clock, Facebook, Linkedin, Instagram } from "lucide-react";
+import bwlLogo from "@/assets/bwl-logo.png";
 
 export function Footer() {
   return (
@@ -8,15 +9,9 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="space-y-6">
-            <div className="flex items-center gap-3">
-              <div className="w-12 h-12 bg-accent rounded-md flex items-center justify-center">
-                <span className="text-accent-foreground font-display text-2xl font-bold">B</span>
-              </div>
-              <div>
-                <h3 className="font-display text-xl leading-tight">BWL Precast</h3>
-                <p className="text-xs text-primary-foreground/70 uppercase tracking-widest">Construction</p>
-              </div>
-            </div>
+            <Link to="/" className="inline-block">
+              <img src={bwlLogo} alt="BWL Precast Construction" className="h-16 w-auto brightness-150" />
+            </Link>
             <p className="text-primary-foreground/80 leading-relaxed">
               Delivering premium precast concrete solutions with precision engineering and unmatched durability.
             </p>
