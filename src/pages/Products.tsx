@@ -27,7 +27,7 @@ export default function Products() {
     const message = encodeURIComponent(
       `Hello! I'm interested in the ${product.name}.\n\nPrice: ${formatKES(product.base_price)}\nTransport: ${useTransport ? formatKES(product.transport_cost) : 'Own transport'}\nTotal: ${formatKES(total)}\n\nPlease provide more details.`
     );
-    window.open(`https://wa.me/254700000000?text=${message}`, '_blank');
+    window.open(`https://wa.me/254799994758?text=${message}`, '_blank');
   };
 
   return (
