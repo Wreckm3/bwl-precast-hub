@@ -33,10 +33,10 @@ export default function About() {
               </p>
               <div className="grid grid-cols-2 gap-6">
                 {[
-                  { value: "500+", label: "Projects Completed" },
-                  { value: "20+", label: "Years Experience" },
-                  { value: "50+", label: "Team Members" },
-                  { value: "98%", label: "Client Satisfaction" },
+                  { value: "KEBS", label: "Standards Compliant" },
+                  { value: "100%", label: "Batch-Tested Concrete" },
+                  { value: "47", label: "Counties Served" },
+                  { value: "24h", label: "Quote Turnaround" },
                 ].map((stat, i) => (
                   <div key={i} className="bg-muted p-4 rounded-lg text-center">
                     <p className="font-display text-3xl text-accent">{stat.value}</p>

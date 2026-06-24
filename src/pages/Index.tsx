@@ -3,7 +3,7 @@ import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { useProducts } from "@/hooks/useProducts";
 import { formatKES } from "@/lib/currency";
-import { Shield, Clock, Award, Truck, ArrowRight, CheckCircle, MessageCircle } from "lucide-react";
+import { Shield, Award, Truck, ArrowRight, CheckCircle, MessageCircle } from "lucide-react";
 import heroImage from "@/assets/hero-construction.jpg";
 import concreteTexture from "@/assets/concrete-texture.jpg";
 
@@ -50,9 +50,9 @@ export default function Index() {
         <div className="container-custom">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { icon: Shield, label: "Quality Guaranteed", value: "ISO Certified" },
-              { icon: Clock, label: "Years Experience", value: "5+" },
-              { icon: Award, label: "Projects Completed", value: "50+" },
+              { icon: Shield, label: "Quality Standard", value: "KEBS Compliant" },
+              { icon: CheckCircle, label: "Factory QA", value: "Batch Tested" },
+              { icon: Award, label: "Workmanship", value: "Guaranteed" },
               { icon: Truck, label: "Delivery Service", value: "Nationwide" },
             ].map((item, i) => (
               <div key={i} className="text-center">
@@ -138,8 +138,8 @@ export default function Index() {
             <div className="relative">
               <img src={concreteTexture} alt="Concrete texture" className="rounded-lg shadow-xl" />
               <div className="absolute -bottom-6 -left-6 bg-accent text-accent-foreground p-6 rounded-lg shadow-xl">
-                <p className="font-display text-4xl">5+</p>
-                <p className="text-sm uppercase tracking-wide">Years of Excellence</p>
+                <p className="font-display text-4xl">100%</p>
+                <p className="text-sm uppercase tracking-wide">Quality Assured</p>
               </div>
             </div>
           </div>
