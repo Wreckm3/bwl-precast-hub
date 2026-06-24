@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import bwlLogo from "@/assets/bwl-logo.png";
 
@@ -49,12 +49,10 @@ export function Navbar() {
 
           {/* CTA Button */}
           <div className="hidden lg:flex items-center gap-4">
-            <a href="tel:+254799994758" className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
-              <Phone className="w-4 h-4" />
-              <span className="text-sm font-medium">+254 799 994 758</span>
-            </a>
             <Button variant="accent" asChild>
-              <Link to="/contact">Get Quote</Link>
+              <a href="https://wa.me/254799994758" target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="w-4 h-4" /> WhatsApp Us
+              </a>
             </Button>
           </div>
 
@@ -87,7 +85,9 @@ export function Navbar() {
                 </Link>
               ))}
               <Button variant="accent" className="mt-4" asChild>
-                <Link to="/contact" onClick={() => setIsOpen(false)}>Get Quote</Link>
+                <a href="https://wa.me/254799994758" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>
+                  <MessageCircle className="w-4 h-4" /> WhatsApp Us
+                </a>
               </Button>
             </div>
           </div>

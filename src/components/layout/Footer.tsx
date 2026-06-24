@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin, Clock, Facebook, Linkedin, Instagram } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
 import bwlLogo from "@/assets/bwl-logo.png";
 
 export function Footer() {
@@ -15,17 +15,14 @@ export function Footer() {
             <p className="text-primary-foreground/80 leading-relaxed">
               Delivering premium precast concrete solutions with precision engineering and unmatched durability.
             </p>
-            <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 bg-primary-foreground/10 rounded-md flex items-center justify-center hover:bg-accent transition-colors">
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-primary-foreground/10 rounded-md flex items-center justify-center hover:bg-accent transition-colors">
-                <Linkedin className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-primary-foreground/10 rounded-md flex items-center justify-center hover:bg-accent transition-colors">
-                <Instagram className="w-5 h-5" />
-              </a>
-            </div>
+            <a
+              href="https://wa.me/254799994758"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-accent text-accent-foreground hover:opacity-90 transition-opacity font-medium"
+            >
+              <MessageCircle className="w-5 h-5" /> Chat on WhatsApp
+            </a>
           </div>
 
           {/* Quick Links */}
@@ -113,14 +110,9 @@ export function Footer() {
           <p className="text-primary-foreground/60 text-sm">
             © {new Date().getFullYear()} BWL Precast Construction. All rights reserved.
           </p>
-          <div className="flex gap-6 text-sm">
-            <a href="#" className="text-primary-foreground/60 hover:text-accent transition-colors">
-              Privacy Policy
-            </a>
-            <a href="#" className="text-primary-foreground/60 hover:text-accent transition-colors">
-              Terms of Service
-            </a>
-          </div>
+          <Link to="/contact" className="text-primary-foreground/60 hover:text-accent transition-colors text-sm">
+            Contact Us
+          </Link>
         </div>
       </div>
     </footer>

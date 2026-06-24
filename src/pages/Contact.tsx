@@ -117,9 +117,15 @@ export default function Contact() {
                 </div>
               </div>
 
-              {/* Map Placeholder */}
-              <div className="bg-muted rounded-lg h-64 flex items-center justify-center">
-                <p className="text-muted-foreground">Map Coming Soon</p>
+              {/* Map */}
+              <div className="rounded-lg overflow-hidden h-64 border border-border">
+                <iframe
+                  title="BWL Precast location"
+                  src="https://www.google.com/maps?q=Nairobi,Kenya&output=embed"
+                  className="w-full h-full"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
               </div>
             </div>
           </div>
